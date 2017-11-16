@@ -56,6 +56,7 @@
     "test:watch": "npm run _pre-testing && jest --watch",
     "test:coverage": "npm run _pre-testing && jest --coverage",
     "clean": "rimraf dist",
+    "prepare": "npm run clean && npm run build",
     "prepublish": "npm run clean && npm run build",
     "build": "webpack && npm run uglify",
     "full-build": "npm run build && npm run make-docs",
